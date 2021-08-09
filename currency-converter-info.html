@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Currency Converter - Cezar Popa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Cezar's Portfolio</a></h1>
+						<nav id="nav">
+
+							<ul>
+								<li><a href="#about-project" class="active">About</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+
+							<a href="#menu" class="not-this-one">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Main page</a></li>
+								<li><a href="#about-project">About</a></li>
+								<!--li><a href="future-link-to-full-projects-list.html">Elements</a></li-->
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Currency Converter - description</h2>
+								<p>A detailed analysis of the project</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper" id="about-project">
+								<div class="inner">
+
+									<h3 class="major">About</h3>
+									<div class="live-github">
+										<a href="https://popacezar96.github.io/currency-converter/" class="btn btn_live">Live<span class="live-icon"></span></a>
+										<a href="https://github.com/popacezar96/currency-converter" class="special1 icon brands fa-github">View on Github</a>
+									</div>
+									<p>This web application was built using client-side code only. Its job was to allow the user to convert any amount of money expressed in the currency of a country to another one of choice while keeping the rate of each currency up to date by default with the help of an API.</p>
+
+									<p>Additionally, there is an option to save each conversion to a table that is automatically generated when the save button is pressed along with the time and date of that conversion. Each line of the table is stored in a database so the conversions will be remembered even after closing the browser and displayed again when that page is accessed.
+										If the user wants to remove the saved conversions there is also a button that can do so.</p>
+
+										<p>The technologies used for development were:</p>
+
+										<ul>
+												<li>HTML5, CSS3, JavaScript ES6</li>
+												<li>Bootstrap 5</li>
+												<li>Frankfurter API - for receiving the exchange rates</li>
+												<li>IndexedDB API - for displying the saved conversions after page reload</li>
+										</ul>
+
+							<div class="box alt">
+								<div class="row gtr-uniform">
+									<div class="col-12">
+											<span class="img fit">
+													<img src="images/Currency convertor app.gif" style="width:100%; border-radius:5px" alt="gif of the converter app">
+											</span>
+									</div>
+								</div>
+							</div>
+
+
+
+									<h3 class="major">Testing and responsiveness</h3>
+									<p>The interface is responsive on different device sizes and the design was approached from the mobile first perspective which was achieved with the help of Chrome inspect options. The testing and other post processing actions were taken trough Grunt task runner:</p>
+										<ol>
+											  <li>For JavaScript:
+															<ul>
+																	<li>uglify</li>
+																	<li>jshint (for linting)</li>
+														</ul>
+												</li>
+												<li>For CSS:
+															<ul>
+																	<li>cssmin</li>
+																	<li>autoprefixer</li>
+																	<li>pixrem</li>
+														</ul>
+												</li>
+										</ol>
+
+									<h3 class="major">Side note</h3>
+									<p>While developing this project, most of the energy was spent on the Javascript part (especially on the FrankfurterAPI and IndexedDB). The first one is a third party API and the second one is a browser API that has a fair amount of browser support.</p>
+										<p>Even though the Frankfurter API required some understanding of the "fetch" promise, using the IndexedDB API proved to be more of a challange because of the Javascript event listeners specific to it that had to be linked to the HTML table in different ways depending on the button pressed.</p>
+										<p>In conclusion, choosing to work on this project as part of my journey as a web developer proved to be a good decision because of the knowledge acquired in working with APIs.</p>
+
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>If you like my work and you need help with a project, let's meet!
+							Fill in the form with your information so I can get back to you via mail or message me on one of my other social media accounts.</p>
+
+						<form method="post" action="https://formspree.io/f/mayapoae" id="my-form">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email*</label>
+									<input type="email" name="email" id="email" required/>
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions" id="form-buttons">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+
+						<ul class="contact">
+							<li class="icon brands fa-github"><a href="https://github.com/popacezar96">github.com/popacezar96</a></li>
+							<li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/cezar-constantin-popa-919219209/">linkedin.com/cezar-constantin-popa</a></li>
+							<li class="icon brands fa-instagram"><a href="https://www.instagram.com/popacezar96/">instagram.com/popacezar96</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Cezar Popa. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
