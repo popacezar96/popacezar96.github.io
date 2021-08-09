@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/walling-OvLXbURo9Wo-unsplash.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -219,7 +219,7 @@ input, select, textarea {
 				font-size: 1.25em;
 				height: 2em;
 				line-height: 1.75em;
-				margin-right: 0.85em;
+				margin-right: 0.5em;
 				text-align: center;
 				text-indent: 0.15em;
 				vertical-align: middle;
@@ -227,11 +227,11 @@ input, select, textarea {
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: rgba(255, 255, 255, 0.1);
 			}
 
 			a.special:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(255, 255, 255, 0.3);
 			}
 
 	strong, b {
@@ -3053,7 +3053,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 550px) {
 
 			.features {
 				display: block;
@@ -3463,7 +3463,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/walling-OvLXbURo9Wo-unsplash.jpg");
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
@@ -3573,7 +3573,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/walling-OvLXbURo9Wo-unsplash.jpg");
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -3973,7 +3973,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 520px) {
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -3998,7 +3998,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+		padding: 3em 0 3em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4061,7 +4061,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(40, 45, 60, 0.8), rgba(40, 45, 60, 0.8)), url("../../images/walling-OvLXbURo9Wo-unsplash.jpg");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
@@ -4142,3 +4142,451 @@ input, select, textarea {
 		}
 
 	}
+
+/*Changing menu layout depending on window size*/
+
+	@media screen and (min-width: 736px){
+
+		#nav {
+			-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+
+			color: #636363;
+			position: absolute;
+			/*width: 64em;*/
+			max-width: calc(100% - 4em);
+
+
+			border-top-left-radius: 0.25em;
+			border-top-right-radius: 0.25em;
+			cursor: default;
+			text-align: center;
+		}
+
+
+			#nav ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+				#nav ul li {
+					-moz-transition: margin 0.2s ease;
+					-webkit-transition: margin 0.2s ease;
+					-ms-transition: margin 0.2s ease;
+					transition: margin 0.2s ease;
+					display: inline-block;
+					margin: 0 0.35em;
+					padding: 0;
+					vertical-align: middle;
+				}
+
+					#nav ul li a {
+						-moz-transition: font-size 0.2s ease;
+						-webkit-transition: font-size 0.2s ease;
+						-ms-transition: font-size 0.2s ease;
+						transition: font-size 0.2s ease;
+						display: inline-block;
+						height: 2.25em;
+						line-height: 2.25em;
+						padding: 0 1.25em;
+						border: 0;
+						border-radius: 8px;
+						box-shadow: inset 0 0 0 1px transparent;
+					}
+
+						#nav ul li a:hover {
+							background-color: rgba(222, 222, 222, 0.25);
+						}
+
+						#nav ul li a.active {
+							background-color: rgba(222, 222, 222, 0.5);
+							box-shadow: none;
+						}
+
+
+								#nav.alternative {
+									position: fixed;
+									border-top-left-radius: 0;
+									border-top-right-radius: 0;
+									z-index: 10000;
+								}
+
+									#nav.alternative ul li {
+										margin: 0 0.175em;
+									}
+
+										#nav.alternative ul li a {
+											font-size: 0.9em;
+										}
+
+	}
+
+	@media screen and (max-width: 736px){
+		#nav ul{
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 737px){
+		a[href="#menu"] {
+			display: none !important;
+		}
+	}
+
+/*Card image hover effect*/
+article .image{
+	overflow: hidden;
+}
+
+article .image img {
+	transition: transform 0.3s linear;
+}
+
+article .image:hover img{
+	transform: scale(1.15);
+}
+
+article .image::after{
+	transition: background-color 0.3s linear;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+article .image:hover::after{
+	background-color: rgba(0,0,0,.3);
+}
+
+/*Card github button styling*/
+.special1{
+	text-decoration: none;
+	border-bottom: 0;
+	display: block;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin: 0 0 2em 0;
+	text-transform: uppercase;
+}
+
+.special1:before{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+
+
+}
+
+.special1:before{
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+
+	color: rgba(255, 255, 255, 0.3);
+
+	display: inline-block;
+	font-size: 1.95em;
+
+	line-height: 1.25em;
+	margin-right: 0.35em;
+	text-align: center;
+
+	vertical-align: middle;
+	text-indent: 0.18em;
+
+}
+
+a.special1:not(.button):hover:before {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+a.special1:not(.button):active:before {
+	color: rgba(255, 255, 255, 1);
+}
+
+/*Card buttons flexing*/
+@media screen and (min-width: 900px) {
+	.card-buttons{
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+	}
+
+	.special1:before{
+
+		display: inline-block;
+		font-size: 1.9em;
+
+		line-height: 1.25em;
+		margin-right: 0.25em;
+		text-align: center;
+
+		vertical-align: middle;
+
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 550px){
+
+	.card-buttons{
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+	}
+
+	.special1:before{
+
+		display: inline-block;
+		font-size: 1.95em;
+
+		line-height: 1.25em;
+		margin-right: 0.35em;
+		text-align: center;
+
+		vertical-align: middle;
+		text-indent: 0.18em;
+
+	}
+}
+/*Styling for "next project" card*/
+#next-project{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+
+		box-shadow: inset 0 0 10px red;
+}
+
+.vertical-center{
+
+}
+
+
+/*Style the live and github buttons for project specific page*/
+.live-github .btn{
+  display: block;
+  font-weight: 700;
+  position: relative;
+	text-decoration: none;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	text-align: center;
+
+	padding-top: 0.2em;
+
+  color: #fff;
+	border: 1px solid white;
+  border-radius: 8px;
+
+	width: 165px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+
+  transition: all .2s;
+
+}
+  .live-github .btn:hover{
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+  }
+  .live-github .btn:hover > span:before{
+    animation: none;
+  }
+  .live-github .btn:active{
+      transform: scale(.95,.95);
+      box-shadow: inset 0px 2px 1px darken(#0288D1,10%);
+  }
+}
+.live-github .btn_live{
+  padding-right: 22px;
+}
+
+span.live-icon{
+    display: inline-block;
+    position: relative;
+    bottom: 4%;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 1.5em;
+		margin-right: 1em;
+    border: 1px solid rgba(0,0,0, .1) !important;
+    border-radius: 50%;
+    z-index: 1;
+	}
+
+span.live-icon:before{
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: rgba(255,0,0,0.6);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+			animation: live 2s ease-in-out infinite;
+      -webkit-animation: live 2s ease-in-out infinite;
+
+      z-index: -1;
+    }
+  }
+@keyframes live {
+  0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(3.5,3.5);
+    background-color: rgba(255,0,0,0);
+  }
+}
+@-webkit-keyframes live{
+	0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(3.5,3.5);
+    background-color: rgba(255,0,0,0);
+  }
+}
+
+
+@media screen and (min-width: 420px){
+
+	.live-github{
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+	}
+
+	.live-github .btn{
+		margin-right: initial;
+		margin-bottom: 2em;
+		margin-top: 0;
+
+		width: 150px;
+		padding-top: 0.4em;
+	}
+
+	span.live-icon{
+		top: 3%;
+	}
+}
+
+
+
+	/*Success and error message on form validation*/
+ul.actions{
+	position: relative;
+}
+
+.success {
+	position: absolute;
+	top: 80%;
+	color: #5FFF46;
+	font-family: inherit;
+  font-size: 0.9em;
+
+    line-height: 3.70em;
+
+	animation: 2s linear 0s infinite alternate fadeIn;
+  -webkit-animation: 2s linear 0s infinite alternate fadeIn;
+  -moz-animation: 2s linear 0s infinite alternate fadeIn;
+  -o-animation: 2s linear 0s infinite alternate fadeIn;
+  -ms-animation: 2s linear 0s infinite alternate fadeIn;
+}
+
+.error{
+	position: absolute;
+	top: 80%;
+	color: #FF3A3A;
+	font-family: inherit;
+  font-size: 0.95em;
+	font-weight: 550;
+
+    line-height: 3.70em;
+
+	animation: 2s linear 0s infinite alternate fadeIn;
+	-webkit-animation: 2s linear 0s infinite alternate fadeIn;
+	-moz-animation: 2s linear 0s infinite alternate fadeIn;
+	-o-animation: 2s linear 0s infinite alternate fadeIn;
+	-ms-animation: 2s linear 0s infinite alternate fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+.error strong,
+.success strong{
+	color: inherit;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+@media screen and (min-width: 480px){
+	.success, .error {
+		position: absolute;
+		top: 0%;
+		right: 0%;
+	}
+}
