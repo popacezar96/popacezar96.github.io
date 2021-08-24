@@ -4387,6 +4387,7 @@ a.special1:not(.button):active:before {
 		align-items: center;
 		justify-content: center;
 
+		height: 500px;
 		box-shadow: inset 0 0 10px red;
 }
 
