@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Movie Search - Cezar Popa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/images/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#534242">
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Cezar's Portfolio</a></h1>
+						<nav id="nav">
+
+							<ul>
+								<li><a href="#about-project" class="active">About</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+
+							<a href="#menu" class="not-this-one">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Main page</a></li>
+								<li><a href="#about-project">About</a></li>
+								<!--li><a href="future-link-to-full-projects-list.html">Elements</a></li-->
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Movie Search - description</h2>
+								<p>A detailed analysis of the project</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper" id="about-project">
+								<div class="inner">
+
+									<h3 class="major">About</h3>
+									<div class="live-github">
+										<a href="https://popacezar96.github.io/movie-search/" class="btn btn_live">Live<span class="live-icon"></span></a>
+										<a href="https://github.com/popacezar96/movie-search" class="special1 icon brands fa-github">View on Github</a>
+									</div>
+									<p>This is an application built using React.js library and its purpose was to allow the user to look for movies within a database by enetering the name (fully or partially) of a movie of choice
+										as input and pressing the submit button afterwords. </p>
+
+									<p>After pressing the button, the name of the movie will be sent to the OMDb API via URL and if the movie is found inside the OMDb database, it will return a JSON file containing information
+										about the search result including the year of release and the URL for a poster (if there is one available). For each result found in the array of objects returned by the OMDb API
+									there will be a React component that displays the information related to that result. </p>
+
+									<p>The main component (App.js) will show a different result depending on the state of 3 variables. If a poster is not available for a movie, a default poster will be loaded.</p>
+
+
+							<div class="box alt">
+								<div class="row gtr-uniform">
+									<div class="col-12">
+											<span class="img fit">
+													<img src="images/Movie Search app.gif" style="width:100%; border-radius:5px" alt="gif of the movie serch app">
+											</span>
+									</div>
+								</div>
+							</div>
+
+									<h3 class="major">Side note</h3>
+									<p>The motivation behind this project was my interest towards understanding important React features such as hooks ("useState", "useEffect", "useReducer") and
+										 the exchange of data between React components that have diferent relationships with each other inside the hierarchy with the help of props .</p>
+										<p></p>
+										<p></p>
+
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>If you like my work and you need help with a project, let's meet!
+							Fill in the form with your information so I can get back to you via mail or message me on one of my other social media accounts.</p>
+
+						<form method="post" action="https://formspree.io/f/mayapoae" id="my-form">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email*</label>
+									<input type="email" name="email" id="email" required/>
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions" id="form-buttons">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+
+						<ul class="contact">
+							<li class="icon brands fa-github"><a href="https://github.com/popacezar96">github.com/popacezar96</a></li>
+							<li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/cezar-constantin-popa-919219209/">linkedin.com/cezar-constantin-popa</a></li>
+							<li class="icon brands fa-instagram"><a href="https://www.instagram.com/popacezar96/">instagram.com/popacezar96</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Cezar Popa. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/formscript.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
